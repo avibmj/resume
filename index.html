@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amavi | Jasa Pembuatan Aplikasi dan Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2D3748;
+            --secondary: #4A5568;
+            --accent: #4299E1;
+            --light: #F7FAFC;
+            --dark: #1A202C;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--primary);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+        
+        .tagline {
+            display: inline-block;
+            background-color: rgba(255,255,255,0.2);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--accent);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn:hover {
+            background-color: #3182CE;
+            transform: translateY(-2px);
+        }
+        
+        .skills {
+            padding: 80px 0;
+            background-color: var(--light);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 2rem;
+            color: var(--dark);
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .skill-card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .skill-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .skill-card h3 {
+            color: var(--accent);
+            margin-top: 0;
+        }
+        
+        .skill-icon {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--accent);
+        }
+        
+        .projects {
+            padding: 80px 0;
+        }
+        
+        .project-card {
+            display: flex;
+            margin-bottom: 50px;
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .project-image {
+            flex: 1;
+            min-height: 300px;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .project-details {
+            flex: 1;
+            padding: 30px;
+        }
+        
+        .project-details h3 {
+            margin-top: 0;
+            font-size: 1.5rem;
+        }
+        
+        .tech-badge {
+            display: inline-block;
+            background-color: var(--light);
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-right: 8px;
+            margin-bottom: 8px;
+        }
+        
+        .contact {
+            padding: 80px 0;
+            background-color: var(--light);
+            text-align: center;
+        }
+        
+        footer {
+            background-color: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .project-card {
+                flex-direction: column;
+            }
+            
+            .project-image {
+                min-height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="hero">
+            <span class="tagline">Full Stack Developer</span>
+            <h1>Hi, Saya Amavi</h1>
+            <p>Spesialis Laravel untuk Backend Development dan Flutter untuk Mobile App Development dengan pengalaman membangun aplikasi web dan mobile yang skalabel.</p>
+            <a href="#contact" class="btn">Hubungi Saya</a>
+        </div>
+    </header>
+    
+    <section class="skills">
+        <div class="container">
+            <h2 class="section-title">Keahlian Saya</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">🛠️</div>
+                    <h3>Laravel Development</h3>
+                    <p>Pengalaman 3+ tahun membangun aplikasi web dengan Laravel, termasuk RESTful API, autentikasi, integrasi payment gateway, dan sistem queue.</p>
+                    <p><strong>Tools:</strong> Laravel, Eloquent, Blade, Livewire, PHPUnit</p>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-icon">📱</div>
+                    <h3>Flutter Development</h3>
+                    <p>Membangun aplikasi mobile cross-platform dengan Flutter yang performanya hampir setara native dengan UI yang menarik.</p>
+                    <p><strong>Tools:</strong> Flutter, Dart, Firebase, BLoC, Provider</p>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-icon">🔗</div>
+                    <h3>API Integration</h3>
+                    <p>Ahli dalam menghubungkan aplikasi mobile Flutter dengan backend Laravel melalui API, termasuk optimasi performa dan keamanan.</p>
+                    <p><strong>Tools:</strong> REST API, JWT Auth, WebSocket, GraphQL</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="projects">
+        <div class="container">
+            <h2 class="section-title">Proyek Terbaru</h2>
+            
+            <div class="project-card">
+                <div class="project-image" style="background-image: url('https://via.placeholder.com/600x400?text=E-Commerce+App');"></div>
+                <div class="project-details">
+                    <h3>Aplikasi E-Commerce</h3>
+                    <p>Aplikasi e-commerce lengkap dengan backend Laravel dan mobile app Flutter. Fitur termasuk pembayaran online, tracking order, dan chat dengan penjual.</p>
+                    <div>
+                        <span class="tech-badge">Laravel</span>
+                        <span class="tech-badge">Flutter</span>
+                        <span class="tech-badge">MySQL</span>
+                        <span class="tech-badge">Firebase</span>
+                    </div>
+                    <a href="#" class="btn" style="margin-top: 20px; display: inline-block;">Lihat Detail</a>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-image" style="background-image: url('https://via.placeholder.com/600x400?text=Health+Tracker');"></div>
+                <div class="project-details">
+                    <h3>Health Tracker App</h3>
+                    <p>Aplikasi untuk memantau kesehatan dengan fitur reminder obat, tracking olahraga, dan konsultasi dokter via chat. Backend menggunakan Laravel dengan API untuk mobile app Flutter.</p>
+                    <div>
+                        <span class="tech-badge">Laravel</span>
+                        <span class="tech-badge">Flutter</span>
+                        <span class="tech-badge">WebSocket</span>
+                        <span class="tech-badge">Push Notification</span>
+                    </div>
+                    <a href="#" class="btn" style="margin-top: 20px; display: inline-block;">Lihat Detail</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Hubungi Saya</h2>
+            <p style="max-width: 600px; margin: 0 auto 30px;">Saya terbuka untuk peluang kerja sama, proyek freelance, atau posisi full-time sebagai Laravel atau Flutter Developer.</p>
+            <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                <a href="mailto:afi.hcrc@gmail.com" class="btn">Email Saya</a>
+                <a href="https://wa.me/6285878472693" class="btn" style="background-color: #25D366;">WhatsApp</a>
+                <a href="#" class="btn" style="background-color: var(--dark);">GitHub</a>
+                <a href="#" class="btn" style="background-color: #0A66C2;">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 amavi. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
